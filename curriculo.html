@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Danillo Teles Carneiro</title>
+    <style>
+        :root {
+            --text-color: #333;
+            --primary-color: #0056b3;
+            --secondary-color: #4a4a4a;
+            --bg-color: #fff;
+            --divider-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 1px solid var(--divider-color);
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 25px;
+            border: 3px solid var(--primary-color);
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--primary-color);
+        }
+
+        .header-text .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            margin-right: 15px;
+            font-size: 0.9em;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--divider-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .job-date, .project-links {
+            font-style: italic;
+            color: var(--secondary-color);
+            font-size: 0.9em;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .skills-section h3 {
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+        
+        .skills-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .skills-section li {
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #fff;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                margin: 0;
+                max-width: 100%;
+            }
+            h1, h2, h3 {
+                color: #000 !important;
+            }
+            a {
+                color: #000 !important;
+                text-decoration: none;
+            }
+            .profile-img {
+                border-color: #000 !important;
+            }
+            header {
+                border-color: #000 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/perfil_linkedin.jpeg" alt="Foto de Danillo Teles" class="profile-img">
+            <div class="header-text">
+                <h1>Danillo Teles Carneiro</h1>
+                <div class="contact-info">
+                    <a href="https://braddteles.github.io/BRADDTELES/" target="_blank">Portfólio</a> |
+                    <a href="https://linkedin.com/in/danilloteles" target="_blank">LinkedIn</a> |
+                    <a href="https://wa.me/5562999184007" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="perfil">
+            <h2>Perfil Profissional</h2>
+            <p>
+                Desenvolvedor Android com experiência prática em Kotlin, focado na criação de aplicativos nativos robustos e com interfaces modernas. Com um portfólio que inclui <strong>2 aplicativos completos e publicados (um de gestão e um de agendamentos)</strong>, demonstro capacidade comprovada de transformar requisitos de negócio em soluções funcionais e de alto impacto.
+            </p>
+            <p>
+                Minha base técnica é fundamentada nas melhores práticas do mercado, incluindo <strong>Clean Architecture, MVVM, injeção de dependências com Hilt e testes automatizados (JUnit, Espresso)</strong>, garantindo a construção de código limpo, escalável e de fácil manutenção.
+            </p>
+            <p>
+                Recém-graduado em Análise e Desenvolvimento de Sistemas e com forte mentalidade de crescimento, estou atualmente expandindo minhas competências para o <strong>desenvolvimento Web Full Stack</strong> (React, Node.js, TypeScript e Docker), buscando me tornar um profissional versátil. Meus planos futuros incluem aprofundar em React Native e, sequencialmente, em desenvolvimento nativo com Swift e Kotlin Multiplatform (KMP), consolidando uma carreira especialista em desenvolvimento de software multiplataforma.
+            </p>
+            <p>Busco uma oportunidade para aplicar meu conhecimento técnico e paixão por tecnologia na criação de produtos inovadores, contribuindo para o sucesso da equipe e da empresa.
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <article>
+                <h3>Auxiliar de Vendas – Pneulândia Reformadora de Pneumáticos</h3>
+                <p class="job-date">Goiânia – GO | Dez 2022 – Presente</p>
+                <ul>
+                    <li>Atendimento consultivo ao cliente, auxiliando na seleção de produtos e soluções.</li>
+                    <li>Utilização do sistema ERP Sankhya para gestão de vendas e processos.</li>
+                    <li>Resolução de problemas, garantindo a satisfação e fidelização dos clientes.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Auxiliar Administrativo – Centro de Destroca de Botijões (CDB)</h3>
+                <p class="job-date">Goiânia – GO | Fev 2012 – Ago 2022</p>
+                <ul>
+                    <li>Gestão de relatórios, documentos e otimização da rotina de escritório.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos de Destaque</h2>
+            <article>
+                <h3><img src="img/logo_canaaLeite.png" alt="Logo CanaaLeite" style="height: 32px; vertical-align: middle; margin-right: 10px;">CanaaLeite (Gestão de Gado Leiteiro)</h3>
+                <p>Aplicativo Android para otimizar a produtividade e a saúde do rebanho.</p>
+                <p><strong>Tecnologias:</strong> Kotlin, MVVM, Clean Architecture, Room, Retrofit, Coroutines, Hilt, Navigation Component, WorkManager.</p>
+                <p class="project-links">
+                    <a href="https://www.youtube.com/embed/-45zhUFABvw" target="_blank">Ver Apresentação em Vídeo</a> | 
+                    <a href="https://braddteles.github.io/portfolio-canaaleite/" target="_blank">Ver Site do Projeto</a>
+                </p>
+            </article>
+            <article>
+                <h3><img src="img/logo_hassamBarbearia.png" alt="Logo Hassam Barbearia" style="height: 32px; vertical-align: middle; margin-right: 10px;">Hassam Barbearia (Projeto Acadêmico)</h3>
+                <p>Aplicação para agendamento e gestão de uma barbearia, com app para cliente e administrador.</p>
+                <p><strong>Tecnologias:</strong> Kotlin, MVVM, Room (SQLite), WorkManager, Retrofit, API REST (Node.js), View Binding, Glide, Android Image Slider, XML.</p>
+                <p class="project-links">
+                    <a href="https://www.youtube.com/embed/NvtTz_HrXHg" target="_blank">Ver Apresentação em Vídeo</a>
+                </p>
+            </article>
+        </section>
+
+        <section id="competencias" class="skills-section">
+            <h2>Competências Técnicas (Hard Skills)</h2>
+            <h3>Desenvolvimento Mobile (Android)</h3>
+            <ul>
+                <li><strong>Linguagem:</strong> Kotlin (Proficiente)</li>
+                <li><strong>Arquitetura:</strong> Clean Architecture, MVVM (Proficiente), MVP</li>
+                <li><strong>Android Jetpack:</strong> Compose (Básico/Intermediário), Room, ViewModel, LiveData, WorkManager, Navigation Component</li>
+                <li><strong>UI/UX:</strong> View Binding, XML, Jetpack Compose, Glide, Lottie, MPAndroidCharts</li>
+                <li><strong>Assincronismo & Dados:</strong> Coroutines, Flow, StateFlow, Retrofit</li>
+                <li><strong>Injeção de Dependências:</strong> Hilt</li>
+                <li><strong>Outras Linguagens Mobile:</strong> Dart (Básico/Intermediário), Java (Iniciante)</li>
+            </ul>
+            <h3>Desenvolvimento Web (Full Stack em Formação)</h3>
+            <ul>
+                <li><strong>Front-end:</strong> HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, Bootstrap</li>
+                <li><strong>Back-end:</strong> Node.js, TypeScript, Nest.js, PHP</li>
+                <li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL, MongoDB, SQLite, Realm, Prisma ORM</li>
+            </ul>
+            <h3>Ferramentas, Metodologias & DevOps</h3>
+            <ul>
+                <li><strong>Versionamento:</strong> Git, GitHub, Git Flow (Proficiente)</li>
+                <li><strong>Qualidade & Princípios:</strong> Clean Code, SOLID</li>
+                <li><strong>Testes:</strong> Testes Unitários (JUnit, Mockito, Jest), Testes Instrumentados (Espresso)</li>
+                <li><strong>Gestão de Projetos:</strong> Metodologias Ágeis, SCRUM, Jira</li>
+                <li><strong>Design:</strong> Figma (Básico/Intermediário)</li>
+                <li><strong>Plataformas:</strong> Docker, Firebase, Postman, Android Studio, VS Code</li>
+            </ul>
+        </section>
+
+        <section id="soft-skills">
+            <h2>Competências Comportamentais (Soft Skills)</h2>
+            <ul>
+                <li>Resolução de problemas</li>
+                <li>Trabalho em equipe</li>
+                <li>Comunicação eficaz</li>
+                <li>Proatividade e aprendizado contínuo</li>
+                <li>Adaptabilidade e Flexibilidade</li>
+                <li>Pensamento Crítico</li>
+                <li>Organização e Gerenciamento de Tempo</li>
+                <li>Atenção aos Detalhes</li>
+                <li>Foco e Disciplina</li>
+            </ul>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Análise e Desenvolvimento de Sistemas</strong> – Uni-Fanap (2023 – 2025)</li>
+                <li><strong>Mentoria Completa Desenvolvedor Android</strong> – Codans Cursos Ltda. (220h, 2024 – 2025)</li>
+                <li><strong>Formação Desenvolvedor Web Full Stack</strong> – Codans Cursos Ltda. (2025 - Em andamento)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

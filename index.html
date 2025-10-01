@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danillo Teles - Desenvolvedor Android & Web</title>
+    <meta name="description" content="Portfólio de Danillo Teles, Desenvolvedor Android e Web Full Stack em Formação.">
+    <meta name="author" content="Danillo Teles Carneiro">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #212529;
+            --light-text: #f8f9fa;
+            --card-bg: #2c3034;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid var(--primary-color);
+        }
+
+        .section-title {
+            margin-bottom: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #444;
+            height: 100%;
+        }
+
+        .card-header {
+            font-weight: bold;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        .tech-badges img {
+            margin: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .tech-badges img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-btn {
+            margin: 0 10px;
+            min-width: 150px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        footer {
+            background-color: var(--card-bg);
+        }
+
+        /* Animation Styles */
+        .animated-element {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animated-element.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .typing-cursor {
+            display: none; /* Hide cursor by default */
+            background-color: var(--light-text);
+            animation: blink 0.7s infinite;
+            width: 2px;
+            height: 1em;
+            margin-left: 3px;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        /* Increased Section Spacing */
+        main .my-5 {
+            margin-top: 3rem !important;
+            margin-bottom: 7rem !important;
+        }
+
+        main .my-7 {
+            margin-top: 9rem !important;
+            margin-bottom: 7rem !important;
+        }
+
+        /* Modal Styles */
+        .modal-content {
+            background-color: #212529; /* Dark background for modal */
+        }
+
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="container text-center py-5">
+        <img src="docs/img/profile.jpg" alt="Foto de Danillo Teles" class="rounded-circle profile-img mb-3 animated-element">
+        <h1 class="display-4 animated-element" style="transition-delay: 100ms;">Danillo Teles Carneiro</h1>
+        <p id="subtitle" class="lead text-white-50" style="min-height: 1.5em;">
+            <i class="fa-solid fa-code"></i>
+            <span id="typing-text-1"></span>
+            <span>&nbsp;&amp;&nbsp;</span>
+            <i class="fa-solid fa-globe"></i>
+            <span id="typing-text-2"></span>
+            <span class="typing-cursor"></span>
+        </p>
+    </header>
+
+    <main class="container flex-grow-1">
+
+        <!-- About Section -->
+        <section id="sobre" class="my-5 text-center animated-element">
+            <h2 class="section-title">SOBRE MIM</h2>
+            <p class="col-md-8 mx-auto">Entusiasta e apaixonado pela tecnologia, com foco em desenvolvimento de software. Acredito no poder da tecnologia para transformar o mundo e, por isso, me dedico na busca constante por conhecimento e pelas melhores soluções em código e design.</p>
+            <p class="col-md-8 mx-auto fw-bold fst-italic">"Desenvolvo com: ❤️ Kotlin, 🧠 Qualidade, 🎨 Design, ✨ Soluções e 🔥 Paixão!"</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="habilidades" class="my-7">
+            <h2 class="section-title text-center animated-element">HABILIDADES TÉCNICAS</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 d-flex align-items-stretch animated-element" style="transition-delay: 100ms;"><div class="card text-white w-100"><div class="card-header fs-5 text-center"><i class="fa-solid fa-mobile-screen-button"></i> Dev Mobile</div><div class="card-body"><ul class="list-unstyled"><li><strong>Linguagens:</strong> Kotlin, Dart, Java</li><li><strong>Arquitetura:</strong> Clean Architecture, MVVM, MVP</li><li><strong>Android Jetpack:</strong> Room, ViewModel, LiveData, WorkManager, Compose</li><li><strong>UI/UX:</strong> View Binding, XML, Glide, Lottie</li><li><strong>Dados:</strong> Retrofit, Flow, StateFlow</li><li><strong>Injeção de Dependências:</strong> Hilt</li></ul></div></div></div>
+                <div class="col-lg-4 d-flex align-items-stretch animated-element" style="transition-delay: 200ms;"><div class="card text-white w-100"><div class="card-header fs-5 text-center"><i class="fa-solid fa-laptop-code"></i> Dev Web (Full Stack)</div><div class="card-body"><ul class="list-unstyled"><li><strong>Front-end:</strong> HTML, CSS, JavaScript, Bootstrap, React, Next.js</li><li><strong>Back-end:</strong> Node.js, TypeScript, Nest.js</li><li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL, MongoDB, SQLite, Realm</li></ul></div></div></div>
+                <div class="col-lg-4 d-flex align-items-stretch animated-element" style="transition-delay: 300ms;"><div class="card text-white w-100"><div class="card-header fs-5 text-center"><i class="fa-solid fa-wrench"></i> Ferramentas e Metodologias</div><div class="card-body"><ul class="list-unstyled"><li><strong>Versionamento:</strong> Git & GitHub</li><li><strong>Qualidade:</strong> Clean Code, SOLID</li><li><strong>Testes:</strong> Unitários, Espresso, Jest</li><li><strong>Gestão:</strong> SCRUM, Jira</li><li><strong>Design:</strong> Figma</li><li><strong>Plataformas:</strong> Docker, Firebase, Postman</li></ul></div></div></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projetos" class="my-7">
+            <h2 class="section-title text-center animated-element">MEUS PROJETOS</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5 d-flex align-items-stretch animated-element" style="transition-delay: 100ms;">
+                    <div class="card text-white w-100">
+                        <div class="card-header fs-5 text-center d-flex align-items-center justify-content-center"><img src="docs/img/logo_canaaLeite.png" alt="Logo CanaaLeite" style="height: 40px; border-radius: 8px; margin-right: 10px;"><strong>CanaaLeite</strong></div>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <p class="card-text">Aplicativo focado no gerenciamento de gado leiteiro para otimizar a produtividade e a saúde do rebanho.</p>
+                            <div class="mt-3">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://www.youtube.com/embed/-45zhUFABvw"><i class="fa-solid fa-play"></i> Ver Apresentação</button>
+                                <a href="https://braddteles.github.io/portfolio-canaaleite/" target="_blank" class="btn btn-outline-light mt-2 mt-sm-0"><i class="fa-solid fa-arrow-up-right-from-square"></i> Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex align-items-stretch animated-element" style="transition-delay: 200ms;">
+                    <div class="card text-white w-100">
+                        <div class="card-header fs-5 text-center d-flex align-items-center justify-content-center"><img src="docs/img/logo_hassamBarbearia.png" alt="Logo Hassam Barbearia" style="height: 40px; border-radius: 8px; margin-right: 10px;"><strong>Hassam Barbearia</strong></div>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <p class="card-text">Aplicação (TCC) para agendamento e gestão de uma barbearia, com app para cliente e para o administrador.</p>
+                            <div class="mt-3 d-flex align-items-center justify-content-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="https://www.youtube.com/embed/NvtTz_HrXHg"><i class="fa-solid fa-play"></i> Ver Apresentação</button>
+                                <span class="text-white-50 fst-italic ms-3">Projeto acadêmico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section id="tecnologias" class="my-7 animated-element">
+            <h2 class="section-title text-center">TECNOLOGIAS EM DESTAQUE</h2>
+            <div class="text-center tech-badges">                
+                <img src="https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+                <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" alt="Android Studio">
+                <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+                <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
+                <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+                <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="my-7 text-center animated-element">
+            <h2 class="section-title">VAMOS CONVERSAR!</h2>
+            <p>Estou aberto a novas oportunidades e desafios. Entre em contato:</p>
+            <div>
+                <a href="https://www.linkedin.com/in/danilloteles/" target="_blank" class="btn btn-primary btn-lg contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/BRADDTELES" target="_blank" class="btn btn-outline-light btn-lg contact-btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="http://wa.me/5562999184007" target="_blank" class="btn btn-success btn-lg contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe id="youtube-video-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white-50 py-3 mt-auto">
+        <p>&copy; 2025 Danillo Teles Carneiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- On-scroll animations --- //
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            const elementsToAnimate = document.querySelectorAll('.animated-element');
+            elementsToAnimate.forEach(element => { observer.observe(element); });
+
+            // --- Typing effect --- //
+            const textPart1 = ' Desenvolvedor Android';
+            const textPart2 = ' Web Full Stack em Formação';
+            const element1 = document.getElementById('typing-text-1');
+            const element2 = document.getElementById('typing-text-2');
+            const cursor = document.querySelector('.typing-cursor');
+            const typingSpeed = 70;
+            function type(element, text, callback) {
+                let i = 0;
+                function typeChar() {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(typeChar, typingSpeed);
+                    } else if (callback) { callback(); }
+                }
+                typeChar();
+            }
+            setTimeout(() => {
+                cursor.style.display = 'inline-block';
+                type(element1, textPart1, () => { type(element2, textPart2, () => {}); });
+            }, 500);
+
+            // --- Modal Video Handler --- //
+            const videoModal = document.getElementById('videoModal');
+            const videoIframe = document.getElementById('youtube-video-iframe');
+            videoModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const videoSrc = button.getAttribute('data-video-src');
+                videoIframe.setAttribute('src', videoSrc + "?autoplay=1&rel=0");
+            });
+            videoModal.addEventListener('hide.bs.modal', function () {
+                videoIframe.setAttribute('src', '');
+            });
+        });
+    </script>
+</body>
+</html>
