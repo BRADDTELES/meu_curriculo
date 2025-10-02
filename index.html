@@ -67,6 +67,11 @@
             text-decoration: underline;
         }
 
+        .contact-info a img {
+            border-radius: 5px; /* Arredonda os cantos */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adiciona uma leve sombra */
+        }
+
         section {
             margin-bottom: 25px;
         }
@@ -89,6 +94,35 @@
             font-style: italic;
             color: var(--secondary-color);
             font-size: 0.9em;
+        }
+
+        .project-links a {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            border-radius: 5px;
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 500;
+            margin-right: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .project-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .project-links a.btn-youtube {
+            background-color: #FF0000;
+        }
+
+        .project-links a svg {
+            margin-right: 8px;
+            fill: currentColor;
         }
 
         ul {
@@ -147,9 +181,9 @@
             <div class="header-text">
                 <h1>Danillo Teles Carneiro</h1>
                 <div class="contact-info">
-                    <a href="https://braddteles.github.io/BRADDTELES/" target="_blank">Portfólio</a> |
-                    <a href="https://linkedin.com/in/danilloteles" target="_blank">LinkedIn</a> |
-                    <a href="https://wa.me/5562999184007" target="_blank">WhatsApp</a>
+                    <a href="https://braddteles.github.io/BRADDTELES/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139" alt="Portfolio"></a>
+                    <a href="https://linkedin.com/in/danilloteles" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+                    <a href="https://wa.me/5562999184007?text=Ol%C3%A1%2C%20vi%20o%20seu%20Curr%C3%ADculo%20e%20achei%20interessante%20te%20convidar%20para%20uma%20entrevista." target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
                 </div>
             </div>
         </header>
@@ -191,20 +225,29 @@
         <section id="projetos">
             <h2>Projetos de Destaque</h2>
             <article>
-                <h3><img src="img/logo_canaaLeite.png" alt="Logo CanaaLeite" style="height: 32px; vertical-align: middle; margin-right: 10px;">CanaaLeite (Gestão de Gado Leiteiro)</h3>
+                <h3><img src="img/logo_canaaLeite.png" alt="Logo CanaaLeite" style="height: 40px; vertical-align: middle; margin-right: 10px;">CanaaLeite (Gestão de Gado Leiteiro)</h3>
                 <p>Aplicativo Android para otimizar a produtividade e a saúde do rebanho.</p>
                 <p><strong>Tecnologias:</strong> Kotlin, MVVM, Clean Architecture, Room, Retrofit, Coroutines, Hilt, Navigation Component, WorkManager.</p>
                 <p class="project-links">
-                    <a href="https://www.youtube.com/embed/-45zhUFABvw" target="_blank">Ver Apresentação em Vídeo</a> | 
-                    <a href="https://braddteles.github.io/portfolio-canaaleite/" target="_blank">Ver Site do Projeto</a>
+                    <a href="https://www.youtube.com/embed/-45zhUFABvw" target="_blank" class="btn-youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.188-.01.943-.074 1.957l-.008.104-.022.26-.01.104c-.048.519-.119 1.023-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.16.308-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.79 99.79 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>
+                        Ver Apresentação
+                    </a> 
+                    <a href="https://braddteles.github.io/portfolio-canaaleite/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+                        Saiba Mais
+                    </a>
                 </p>
             </article>
             <article>
-                <h3><img src="img/logo_hassamBarbearia.png" alt="Logo Hassam Barbearia" style="height: 32px; vertical-align: middle; margin-right: 10px;">Hassam Barbearia (Projeto Acadêmico)</h3>
+                <h3><img src="img/logo_hassamBarbearia.png" alt="Logo Hassam Barbearia" style="height: 40px; vertical-align: middle; margin-right: 10px;">Hassam Barbearia (Projeto Acadêmico)</h3>
                 <p>Aplicação para agendamento e gestão de uma barbearia, com app para cliente e administrador.</p>
                 <p><strong>Tecnologias:</strong> Kotlin, MVVM, Room (SQLite), WorkManager, Retrofit, API REST (Node.js), View Binding, Glide, Android Image Slider, XML.</p>
                 <p class="project-links">
-                    <a href="https://www.youtube.com/embed/NvtTz_HrXHg" target="_blank">Ver Apresentação em Vídeo</a>
+                    <a href="https://www.youtube.com/embed/NvtTz_HrXHg" target="_blank" class="btn-youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.188-.01.943-.074 1.957l-.008.104-.022.26-.01.104c-.048.519-.119 1.023-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.16.308-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.79 99.79 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>
+                        Ver Apresentação
+                    </a>
                 </p>
             </article>
         </section>
