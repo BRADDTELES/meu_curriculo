@@ -1,0 +1,282 @@
+:root {
+  --text-color: #333;
+  --primary-color: #0056b3;
+  --secondary-color: #4a4a4a;
+  --bg-color: #fff;
+  --divider-color: #e0e0e0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid var(--divider-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 25px;
+  border: 3px solid var(--primary-color);
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: var(--primary-color);
+}
+
+.header-text .contact-info {
+  margin-top: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-right: 15px;
+  font-size: 0.9em;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info a img {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.job-date,
+.project-links {
+  font-style: italic;
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-links a.btn-youtube {
+  background-color: #ff0000;
+}
+
+.project-links a.btn-google-play {
+  background-color: #4caf50;
+}
+
+.project-links a[href="https://braddteles.github.io/portfolio-canaaleite/"],
+        .project-links a[href="https://braddteles.github.io/portfolio_hassam_barbearia/"],
+        .project-links a[href="https://braddteles.github.io/App_Netflix_API_TheMovieDB/"]
+{
+  background-color: #16c1c8;
+}
+
+.project-links a svg {
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.skills-section h3 {
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-section li {
+  margin-bottom: 5px;
+}
+
+.certificate-link {
+  text-decoration: none;
+  margin-left: 8px;
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.certificate-link:hover {
+  opacity: 0.7;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .container {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  .profile-img {
+    border-color: #000 !important;
+  }
+
+  header {
+    border-color: #000 !important;
+  }
+}
+
+/* Modal Styles */
+#diploma-trigger,
+#mentoria-trigger,
+#php-trigger,
+#java-trigger {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modal-image {
+    max-width: 48%;
+    height: auto;
+    border: 1px solid var(--divider-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-image-single {
+    max-width: 90%;
+    max-height: 80vh; /* Para evitar que a imagem seja maior que a tela */
+    height: auto;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border: 1px solid var(--divider-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 15% auto;
+    }
+    .modal-image {
+        max-width: 95%;
+    }
+}
+
