@@ -42,6 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeModal("php-trigger", "php-modal");
   initializeModal("java-trigger", "java-modal");
 
+  // ===== Sistema de Salvar PDF =====
+
+  const botaoPdf = document.getElementById("botao-pdf");
+
+  // Tooltips do botão PDF em cada idioma
+  const tooltipsPdf = {
+    pt: "Salvar como PDF",
+    en: "Save as PDF",
+  };
+
+  // Função para salvar/imprimir como PDF
+  function salvarComoPdf() {
+    window.print();
+  }
+
+  // Event listener para o botão de PDF
+  botaoPdf.addEventListener("click", salvarComoPdf);
+
   // ===== Sistema de Troca de Idioma =====
 
   // Idioma atual (padrão: português)
@@ -129,8 +147,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const idiomaExibido = idiomaAtualizado === "pt" ? "EN" : "PT";
     textoIdioma.textContent = idiomaExibido;
 
-    // Atualiza o tooltip
+    // Atualiza o tooltip do botão de idioma
     botaoIdioma.title = tooltips[idiomaAtualizado];
+
+    // Atualiza o tooltip do botão de PDF
+    botaoPdf.title = tooltipsPdf[idiomaAtualizado];
   }
 
   // Alterna entre os idiomas

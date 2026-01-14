@@ -47,13 +47,18 @@ header {
 
 .header-text .contact-info {
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
 
 .contact-info a {
   text-decoration: none;
   color: var(--secondary-color);
-  margin-right: 15px;
   font-size: 0.9em;
+  display: inline-flex;
+  align-items: center;
 }
 
 .contact-info a:hover {
@@ -63,6 +68,8 @@ header {
 .contact-info a img {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 28px;
+  vertical-align: middle;
 }
 
 section {
@@ -358,16 +365,82 @@ ul {
   letter-spacing: 0.5px;
 }
 
-/* Container para posicionar o botão no header */
-.container-idioma {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+/* Estilo para botões ficarem do mesmo tamanho que os badges */
+.botao-badge {
+  height: 28px;
+  padding: 0 12px !important;
+  font-size: 0.75em !important;
+  border-radius: 5px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
 }
 
-/* Ajuste do header para posicionamento relativo */
-header {
+.botao-badge .icone-globo,
+.botao-badge .icone-pdf {
+  font-size: 1em;
+}
+
+.botao-badge:hover {
+  transform: translateY(-2px);
+}
+
+/* Botão de Salvar PDF */
+.botao-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.3);
   position: relative;
+  overflow: hidden;
+}
+
+.botao-pdf::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.botao-pdf:hover::before {
+  left: 100%;
+}
+
+.botao-pdf:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(17, 153, 142, 0.4);
+}
+
+.botao-pdf:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.icone-pdf {
+  font-size: 1.1em;
+}
+
+.texto-pdf {
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 /* Elementos traduzíveis - animação de transição */
@@ -380,16 +453,17 @@ header {
   transform: translateY(-5px);
 }
 
-/* Responsividade do botão de idioma */
+/* Responsividade dos botões de idioma e PDF */
 @media (max-width: 600px) {
-  .container-idioma {
-    position: static;
-    margin-top: 15px;
-    text-align: center;
+  .botao-badge {
+    padding: 0 8px !important;
+    font-size: 0.7em !important;
   }
+}
 
-  .botao-idioma {
-    padding: 6px 12px;
-    font-size: 0.85em;
+/* Ocultar botões durante impressão */
+@media print {
+  .botao-badge {
+    display: none !important;
   }
 }
