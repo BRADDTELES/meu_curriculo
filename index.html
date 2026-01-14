@@ -28,9 +28,22 @@
               color: var(--secondary-color);
             "
           >
-            <strong>WhatsApp:</strong> 62 999184007 |
-            <strong>Localização:</strong> Aparecida de Goiânia, Goiás - Jardim
-            Luz
+            <strong class="traduzivel" data-pt="WhatsApp:" data-en="WhatsApp:"
+              >WhatsApp:</strong
+            >
+            62 999184007 |
+            <strong
+              class="traduzivel"
+              data-pt="Localização:"
+              data-en="Location:"
+              >Localização:</strong
+            >
+            <span
+              class="traduzivel"
+              data-pt="Aparecida de Goiânia, Goiás - Jardim Luz"
+              data-en="Aparecida de Goiânia, Goiás - Jardim Luz, Brazil"
+              >Aparecida de Goiânia, Goiás - Jardim Luz</span
+            >
           </p>
           <p
             style="
@@ -40,6 +53,9 @@
             "
           >
             <em
+              class="traduzivel"
+              data-pt="Para um contato mais rápido, me chame no WhatsApp ou clique no banner verde abaixo, se estiver abrindo esse arquivo no Navegador."
+              data-en="For a faster response, contact me on WhatsApp or click the green banner below if you're viewing this file in a browser."
               >Para um contato mais rápido, me chame no WhatsApp ou clique no
               banner verde abaixo, se estiver abrindo esse arquivo no
               Navegador.</em
@@ -65,11 +81,33 @@
             /></a>
           </div>
         </div>
+
+        <!-- Botão de Troca de Idioma -->
+        <div class="container-idioma">
+          <button
+            id="botao-idioma"
+            class="botao-idioma"
+            title="Switch to English"
+          >
+            <span class="icone-globo">🌐</span>
+            <span class="texto-idioma">EN</span>
+          </button>
+        </div>
       </header>
 
       <section id="perfil">
-        <h2>Perfil Profissional</h2>
-        <p>
+        <h2
+          class="traduzivel"
+          data-pt="Perfil Profissional"
+          data-en="Professional Profile"
+        >
+          Perfil Profissional
+        </h2>
+        <p
+          class="traduzivel"
+          data-pt="Desenvolvedor Android com experiência prática em Kotlin, focado na criação de aplicativos nativos robustos e com interfaces modernas. Com um portfólio que inclui <strong>4 aplicativos completos e publicados (agendamentos para barbearia, gestão agropecuária, streaming de conteúdo e pagamentos com a Stripe)</strong>, demonstro capacidade comprovada de transformar requisitos de negócio em soluções funcionais e de alto impacto."
+          data-en="Android Developer with hands-on experience in Kotlin, focused on building robust native applications with modern interfaces. With a portfolio that includes <strong>4 complete and published applications (barbershop scheduling, agricultural management, content streaming, and Stripe payments)</strong>, I demonstrate proven ability to transform business requirements into functional, high-impact solutions."
+        >
           Desenvolvedor Android com experiência prática em Kotlin, focado na
           criação de aplicativos nativos robustos e com interfaces modernas. Com
           um portfólio que inclui
@@ -80,7 +118,11 @@
           >, demonstro capacidade comprovada de transformar requisitos de
           negócio em soluções funcionais e de alto impacto.
         </p>
-        <p>
+        <p
+          class="traduzivel"
+          data-pt="Minha base técnica é fundamentada nas melhores práticas do mercado, incluindo <strong>Kotlin Multiplatform, Clean Architecture, MVVM, injeção de dependências, construção de servidores e clientes assíncronos com Ktor, layouts responsivos usando Jetpack Compose e XML, além de testes automatizados (JUnit, Espresso)</strong>, garantindo a construção de código limpo, escalável e de fácil manutenção."
+          data-en="My technical foundation is grounded in industry best practices, including <strong>Kotlin Multiplatform, Clean Architecture, MVVM, dependency injection, building asynchronous servers and clients with Ktor, responsive layouts using Jetpack Compose and XML, and automated testing (JUnit, Espresso)</strong>, ensuring clean, scalable, and maintainable code."
+        >
           Minha base técnica é fundamentada nas melhores práticas do mercado,
           incluindo
           <strong
@@ -91,7 +133,11 @@
           >, garantindo a construção de código limpo, escalável e de fácil
           manutenção.
         </p>
-        <p>
+        <p
+          class="traduzivel"
+          data-pt="Graduado em Análise e Desenvolvimento de Sistemas e com forte mentalidade de crescimento, estou atualmente expandindo minhas competências para o <strong>desenvolvimento Web Full Stack</strong> (React, Node.js, TypeScript e Docker), buscando me tornar um profissional versátil. Meus planos futuros incluem aprofundar em React Native e, sequencialmente, em desenvolvimento nativo com Swift e Kotlin Multiplatform (KMP), consolidando uma carreira especialista em desenvolvimento de software multiplataforma."
+          data-en="Graduated in Systems Analysis and Development with a strong growth mindset, I am currently expanding my skills to <strong>Full Stack Web Development</strong> (React, Node.js, TypeScript, and Docker), aiming to become a versatile professional. My future plans include deepening knowledge in React Native and, subsequently, native development with Swift and Kotlin Multiplatform (KMP), building a specialized career in cross-platform software development."
+        >
           Graduado em Análise e Desenvolvimento de Sistemas e com forte
           mentalidade de crescimento, estou atualmente expandindo minhas
           competências para o
@@ -102,7 +148,11 @@
           Multiplatform (KMP), consolidando uma carreira especialista em
           desenvolvimento de software multiplataforma.
         </p>
-        <p>
+        <p
+          class="traduzivel"
+          data-pt="Busco uma oportunidade para aplicar meu conhecimento técnico e paixão por tecnologia na criação de produtos inovadores, contribuindo para o sucesso da equipe e da empresa."
+          data-en="I am seeking an opportunity to apply my technical knowledge and passion for technology in creating innovative products, contributing to the success of the team and the company."
+        >
           Busco uma oportunidade para aplicar meu conhecimento técnico e paixão
           por tecnologia na criação de produtos inovadores, contribuindo para o
           sucesso da equipe e da empresa.
@@ -110,38 +160,86 @@
       </section>
 
       <section id="experiencia">
-        <h2>Experiência Profissional</h2>
+        <h2
+          class="traduzivel"
+          data-pt="Experiência Profissional"
+          data-en="Professional Experience"
+        >
+          Experiência Profissional
+        </h2>
         <article>
-          <h3>Auxiliar de Vendas – Pneulândia Reformadora de Pneumáticos</h3>
-          <p class="job-date">Goiânia – GO | Dez 2022 – Dez 2025</p>
+          <h3
+            class="traduzivel"
+            data-pt="Auxiliar de Vendas – Pneulândia Reformadora de Pneumáticos"
+            data-en="Sales Assistant – Pneulândia Tire Retreading"
+          >
+            Auxiliar de Vendas – Pneulândia Reformadora de Pneumáticos
+          </h3>
+          <p
+            class="job-date traduzivel"
+            data-pt="Goiânia – GO | Dez 2022 – Dez 2025"
+            data-en="Goiânia – GO, Brazil | Dec 2022 – Dec 2025"
+          >
+            Goiânia – GO | Dez 2022 – Dez 2025
+          </p>
           <ul>
-            <li>
+            <li
+              class="traduzivel"
+              data-pt="Desenvolvi habilidades de comunicação e análise ao traduzir as necessidades dos clientes em soluções de produtos eficazes."
+              data-en="Developed communication and analytical skills by translating customer needs into effective product solutions."
+            >
               Desenvolvi habilidades de comunicação e análise ao traduzir as
               necessidades dos clientes em soluções de produtos eficazes.
             </li>
-            <li>
+            <li
+              class="traduzivel"
+              data-pt="Adquiri proficiência no sistema de gestão ERP Sankhya, utilizando-o para gerenciar processos e garantir a integridade dos dados."
+              data-en="Gained proficiency in the Sankhya ERP management system, using it to manage processes and ensure data integrity."
+            >
               Adquiri proficiência no sistema de gestão ERP Sankhya,
               utilizando-o para gerenciar processos e garantir a integridade dos
               dados.
             </li>
-            <li>
+            <li
+              class="traduzivel"
+              data-pt="Apliquei raciocínio lógico para diagnosticar e solucionar problemas, visando a retenção e a satisfação do cliente."
+              data-en="Applied logical reasoning to diagnose and solve problems, aiming for customer retention and satisfaction."
+            >
               Apliquei raciocínio lógico para diagnosticar e solucionar
               problemas, visando a retenção e a satisfação do cliente.
             </li>
           </ul>
         </article>
         <article>
-          <h3>
+          <h3
+            class="traduzivel"
+            data-pt="Auxiliar Administrativo – Centro de Destroca de Botijões (CDB)"
+            data-en="Administrative Assistant – Gas Cylinder Exchange Center (CDB)"
+          >
             Auxiliar Administrativo – Centro de Destroca de Botijões (CDB)
           </h3>
-          <p class="job-date">Goiânia – GO | Fev 2012 – Ago 2022</p>
+          <p
+            class="job-date traduzivel"
+            data-pt="Goiânia – GO | Fev 2012 – Ago 2022"
+            data-en="Goiânia – GO, Brazil | Feb 2012 – Aug 2022"
+          >
+            Goiânia – GO | Fev 2012 – Ago 2022
+          </p>
           <ul>
-            <li>
+            <li
+              class="traduzivel"
+              data-pt="Responsável por gerenciar múltiplos sistemas de controle, como o monitoramento de estoque (vasilhames) e a distribuição de EPIs, garantindo a precisão e consistência dos dados."
+              data-en="Responsible for managing multiple control systems, such as inventory monitoring (containers) and PPE distribution, ensuring data accuracy and consistency."
+            >
               Responsável por gerenciar múltiplos sistemas de controle, como o
               monitoramento de estoque (vasilhames) e a distribuição de EPIs,
               garantindo a precisão e consistência dos dados.
             </li>
-            <li>
+            <li
+              class="traduzivel"
+              data-pt="Executei processos diários críticos, incluindo a emissão de autorizações e a elaboração de relatórios (diários, quinzenais e mensais) para comunicação com stakeholders internos e externos."
+              data-en="Executed critical daily processes, including issuing authorizations and preparing reports (daily, biweekly, and monthly) for communication with internal and external stakeholders."
+            >
               Executei processos diários críticos, incluindo a emissão de
               autorizações e a elaboração de relatórios (diários, quinzenais e
               mensais) para comunicação com stakeholders internos e externos.
@@ -151,22 +249,44 @@
       </section>
 
       <section id="projetos">
-        <h2>Projetos de Destaque</h2>
+        <h2
+          class="traduzivel"
+          data-pt="Projetos de Destaque"
+          data-en="Featured Projects"
+        >
+          Projetos de Destaque
+        </h2>
         <article>
           <h3>
             <img
               src="img/logo_canaaLeite.png"
               alt="Logo CanaaLeite"
               style="height: 40px; vertical-align: middle; margin-right: 10px"
-            />CanaaLeite (Gestão de Gado Leiteiro)
+            />CanaaLeite
+            <span
+              class="traduzivel"
+              data-pt="(Gestão de Gado Leiteiro)"
+              data-en="(Dairy Cattle Management)"
+              >(Gestão de Gado Leiteiro)</span
+            >
           </h3>
-          <p>
+          <p
+            class="traduzivel"
+            data-pt="Aplicativo Android para otimizar a produtividade e a saúde do rebanho."
+            data-en="Android application to optimize herd productivity and health."
+          >
             Aplicativo Android para otimizar a produtividade e a saúde do
             rebanho.
           </p>
           <p>
-            <strong>Tecnologias:</strong> Kotlin, MVVM, Clean Architecture,
-            Room, Retrofit, Coroutines, Hilt, Navigation Component, WorkManager.
+            <strong
+              class="traduzivel"
+              data-pt="Tecnologias:"
+              data-en="Technologies:"
+              >Tecnologias:</strong
+            >
+            Kotlin, MVVM, Clean Architecture, Room, Retrofit, Coroutines, Hilt,
+            Navigation Component, WorkManager.
           </p>
           <p class="project-links">
             <a
@@ -184,7 +304,12 @@
                   d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.188-.01.943-.074 1.957l-.008.104-.022.26-.01.104c-.048.519-.119 1.023-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.16.308-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.79 99.79 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
                 />
               </svg>
-              Ver Apresentação
+              <span
+                class="traduzivel"
+                data-pt="Ver Apresentação"
+                data-en="Watch Demo"
+                >Ver Apresentação</span
+              >
             </a>
             <a
               href="https://braddteles.github.io/portfolio-canaaleite/"
@@ -205,7 +330,9 @@
                   d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
                 />
               </svg>
-              Saiba Mais
+              <span class="traduzivel" data-pt="Saiba Mais" data-en="Learn More"
+                >Saiba Mais</span
+              >
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.danillotelescarneiro.canaaleite"
@@ -234,16 +361,31 @@
               src="img/logo_hassamBarbearia.png"
               alt="Logo Hassam Barbearia"
               style="height: 40px; vertical-align: middle; margin-right: 10px"
-            />Hassam Barbearia (Projeto Acadêmico)
+            />Hassam Barbearia
+            <span
+              class="traduzivel"
+              data-pt="(Projeto Acadêmico)"
+              data-en="(Academic Project)"
+              >(Projeto Acadêmico)</span
+            >
           </h3>
-          <p>
+          <p
+            class="traduzivel"
+            data-pt="Aplicação para agendamento e gestão de uma barbearia, com app para cliente e administrador."
+            data-en="Application for scheduling and managing a barbershop, with apps for clients and administrators."
+          >
             Aplicação para agendamento e gestão de uma barbearia, com app para
             cliente e administrador.
           </p>
           <p>
-            <strong>Tecnologias:</strong> Kotlin, MVVM, Room (SQLite),
-            WorkManager, Retrofit, API REST (Node.js), View Binding, Glide,
-            Android Image Slider, XML.
+            <strong
+              class="traduzivel"
+              data-pt="Tecnologias:"
+              data-en="Technologies:"
+              >Tecnologias:</strong
+            >
+            Kotlin, MVVM, Room (SQLite), WorkManager, Retrofit, API REST
+            (Node.js), View Binding, Glide, Android Image Slider, XML.
           </p>
           <p class="project-links">
             <a
@@ -261,7 +403,12 @@
                   d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.188-.01.943-.074 1.957l-.008.104-.022.26-.01.104c-.048.519-.119 1.023-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.16.308-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.79 99.79 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
                 />
               </svg>
-              Ver Apresentação
+              <span
+                class="traduzivel"
+                data-pt="Ver Apresentação"
+                data-en="Watch Demo"
+                >Ver Apresentação</span
+              >
             </a>
             <a
               href="https://braddteles.github.io/portfolio_hassam_barbearia/"
@@ -282,7 +429,9 @@
                   d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
                 />
               </svg>
-              Saiba Mais
+              <span class="traduzivel" data-pt="Saiba Mais" data-en="Learn More"
+                >Saiba Mais</span
+              >
             </a>
           </p>
         </article>
@@ -295,14 +444,23 @@
               style="height: 40px; vertical-align: middle; margin-right: 10px"
             />StreamDTC
           </h3>
-          <p>
+          <p
+            class="traduzivel"
+            data-pt="Aplicativo Android que replica a interface da Netflix, consumindo dados da API do The Movie DB (TMDB)."
+            data-en="Android application that replicates the Netflix interface, consuming data from The Movie DB (TMDB) API."
+          >
             Aplicativo Android que replica a interface da Netflix, consumindo
             dados da API do The Movie DB (TMDB).
           </p>
           <p>
-            <strong>Tecnologias:</strong> Kotlin, MVVM, DataStore, Retrofit, API
-            The Movie DB v3 e v4, Paging 3, Coil, Material 3 Expressive, Jetpack
-            Compose, Navigation Compose
+            <strong
+              class="traduzivel"
+              data-pt="Tecnologias:"
+              data-en="Technologies:"
+              >Tecnologias:</strong
+            >
+            Kotlin, MVVM, DataStore, Retrofit, API The Movie DB v3 e v4, Paging
+            3, Coil, Material 3 Expressive, Jetpack Compose, Navigation Compose
           </p>
           <p class="project-links">
             <a
@@ -320,7 +478,12 @@
                   d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.188-.01.943-.074 1.957l-.008.104-.022.26-.01.104c-.048.519-.119 1.023-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.16.308-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.79 99.79 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
                 />
               </svg>
-              Ver Apresentação
+              <span
+                class="traduzivel"
+                data-pt="Ver Apresentação"
+                data-en="Watch Demo"
+                >Ver Apresentação</span
+              >
             </a>
             <a
               href="https://braddteles.github.io/App_Netflix_API_TheMovieDB/"
@@ -341,7 +504,9 @@
                   d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
                 />
               </svg>
-              Saiba Mais
+              <span class="traduzivel" data-pt="Saiba Mais" data-en="Learn More"
+                >Saiba Mais</span
+              >
             </a>
           </p>
         </article>
@@ -354,15 +519,24 @@
               style="height: 40px; vertical-align: middle; margin-right: 10px"
             />Learn Stripe
           </h3>
-          <p>
+          <p
+            class="traduzivel"
+            data-pt="Um aplicativo de aprendizado, que foi construído com Kotlin Multiplatform e Compose, explorando o ecossistema de pagamentos da Stripe de ponta a ponta."
+            data-en="A learning application built with Kotlin Multiplatform and Compose, exploring the Stripe payment ecosystem end-to-end."
+          >
             Um aplicativo de aprendizado, que foi construído com Kotlin
             Multiplatform e Compose, explorando o ecossistema de pagamentos da
             Stripe de ponta a ponta.
           </p>
           <p>
-            <strong>Tecnologias:</strong> Kotlin Multiplatform, Compose
-            Multiplatform, MVVM, Ktor, API Stripe, SQLDelight, Koin, Kamel,
-            Material 3 Expressive, Voyager
+            <strong
+              class="traduzivel"
+              data-pt="Tecnologias:"
+              data-en="Technologies:"
+              >Tecnologias:</strong
+            >
+            Kotlin Multiplatform, Compose Multiplatform, MVVM, Ktor, API Stripe,
+            SQLDelight, Koin, Kamel, Material 3 Expressive, Voyager
           </p>
           <p class="project-links">
             <a
@@ -380,9 +554,14 @@
                   d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.188-.01.943-.074 1.957l-.008.104-.022.26-.01.104c-.048.519-.119 1.023-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.16.308-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.79 99.79 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
                 />
               </svg>
-              Ver Apresentação
+              <span
+                class="traduzivel"
+                data-pt="Ver Apresentação"
+                data-en="Watch Demo"
+                >Ver Apresentação</span
+              >
             </a>
-           <a
+            <a
               href="https://braddteles.github.io/portfolio-stripe-learning-app/"
               target="_blank"
             >
@@ -401,48 +580,123 @@
                   d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
                 />
               </svg>
-              Saiba Mais <!-- A cor deste botão deve ser configurado no arquivo css em .project-links a[href...] -->
+              <span class="traduzivel" data-pt="Saiba Mais" data-en="Learn More"
+                >Saiba Mais</span
+              >
             </a>
           </p>
         </article>
       </section>
 
       <section id="competencias" class="skills-section">
-        <h2>Competências Técnicas (Hard Skills)</h2>
-        <h3>Desenvolvimento Mobile (Android)</h3>
+        <h2
+          class="traduzivel"
+          data-pt="Competências Técnicas (Hard Skills)"
+          data-en="Technical Skills (Hard Skills)"
+        >
+          Competências Técnicas (Hard Skills)
+        </h2>
+        <h3
+          class="traduzivel"
+          data-pt="Desenvolvimento Mobile (Android)"
+          data-en="Mobile Development (Android)"
+        >
+          Desenvolvimento Mobile (Android)
+        </h3>
         <ul>
-          <li><strong>Linguagem:</strong> Kotlin (Proficiente)</li>
           <li>
-            <strong>Arquitetura:</strong> Clean Architecture, MVVM
-            (Proficiente), MVP, MVI e MVC
+            <strong class="traduzivel" data-pt="Linguagem:" data-en="Language:"
+              >Linguagem:</strong
+            >
+            <span
+              class="traduzivel"
+              data-pt="Kotlin (Proficiente)"
+              data-en="Kotlin (Proficient)"
+              >Kotlin (Proficiente)</span
+            >
           </li>
           <li>
-            <strong>Multiplatforma:</strong> Compose Multiplatform, Ktor,
-            SQLDelight, Koin, Kamel, Voyager e Peekaboo
+            <strong
+              class="traduzivel"
+              data-pt="Arquitetura:"
+              data-en="Architecture:"
+              >Arquitetura:</strong
+            >
+            <span
+              class="traduzivel"
+              data-pt="Clean Architecture, MVVM (Proficiente), MVP, MVI e MVC"
+              data-en="Clean Architecture, MVVM (Proficient), MVP, MVI, and MVC"
+              >Clean Architecture, MVVM (Proficiente), MVP, MVI e MVC</span
+            >
+          </li>
+          <li>
+            <strong
+              class="traduzivel"
+              data-pt="Multiplatforma:"
+              data-en="Multiplatform:"
+              >Multiplatforma:</strong
+            >
+            Compose Multiplatform, Ktor, SQLDelight, Koin, Kamel, Voyager e
+            Peekaboo
           </li>
           <li>
             <strong>Android Jetpack:</strong> Room, DataStore, ViewModel,
             LiveData, WorkManager, Navigation Component e Compose
           </li>
           <li>
-            <strong>UI/UX:</strong> XML (Proficiente), Jetpack Compose
-            (Proficiente), View Binding, Coil, Glide, Picasso, Lottie,
-            MPAndroidCharts, Material 3 Expressive
+            <strong>UI/UX:</strong>
+            <span
+              class="traduzivel"
+              data-pt="XML (Proficiente), Jetpack Compose (Proficiente)"
+              data-en="XML (Proficient), Jetpack Compose (Proficient)"
+              >XML (Proficiente), Jetpack Compose (Proficiente)</span
+            >, View Binding, Coil, Glide, Picasso, Lottie, MPAndroidCharts,
+            Material 3 Expressive
           </li>
           <li>
-            <strong>Assincronismo & Dados:</strong>Paging 3, Coroutines, Flow,
-            StateFlow e Retrofit
+            <strong
+              class="traduzivel"
+              data-pt="Assincronismo & Dados:"
+              data-en="Asynchronous & Data:"
+              >Assincronismo & Dados:</strong
+            >
+            Paging 3, Coroutines, Flow, StateFlow e Retrofit
           </li>
           <li>
-            <strong>Consumo de APIs REST:</strong> Stripe, The Movie DB (TMDB),
-            ViaCEP, DummyJSON e ML Kit
+            <strong
+              class="traduzivel"
+              data-pt="Consumo de APIs REST:"
+              data-en="REST API Consumption:"
+              >Consumo de APIs REST:</strong
+            >
+            Stripe, The Movie DB (TMDB), ViaCEP, DummyJSON e ML Kit
           </li>
-          <li><strong>Injeção de Dependências:</strong> Hilt</li>
           <li>
-            <strong>Outras Linguagens Mobile:</strong> Dart (Flutter) e Java
+            <strong
+              class="traduzivel"
+              data-pt="Injeção de Dependências:"
+              data-en="Dependency Injection:"
+              >Injeção de Dependências:</strong
+            >
+            Hilt
+          </li>
+          <li>
+            <strong
+              class="traduzivel"
+              data-pt="Outras Linguagens Mobile:"
+              data-en="Other Mobile Languages:"
+              >Outras Linguagens Mobile:</strong
+            >
+            Dart (Flutter) e Java
           </li>
         </ul>
-        <h3>Desenvolvimento Web (Full Stack em Formação)</h3>
+        <h3
+          class="traduzivel"
+          data-pt="Desenvolvimento Web (Full Stack em Formação)"
+          data-en="Web Development (Full Stack in Training)"
+        >
+          Desenvolvimento Web (Full Stack em Formação)
+        </h3>
         <ul>
           <li>
             <strong>Front-end:</strong> HTML, CSS, JavaScript, React, Next.js,
@@ -450,71 +704,227 @@
           </li>
           <li><strong>Back-end:</strong> Node.js, TypeScript, Nest.js, PHP</li>
           <li>
-            <strong>Bancos de Dados:</strong> MySQL, PostgreSQL, MongoDB,
-            SQLite, Realm, Prisma ORM
+            <strong
+              class="traduzivel"
+              data-pt="Bancos de Dados:"
+              data-en="Databases:"
+              >Bancos de Dados:</strong
+            >
+            MySQL, PostgreSQL, MongoDB, SQLite, Realm, Prisma ORM
           </li>
         </ul>
-        <h3>Ferramentas, Metodologias & DevOps</h3>
+        <h3
+          class="traduzivel"
+          data-pt="Ferramentas, Metodologias & DevOps"
+          data-en="Tools, Methodologies & DevOps"
+        >
+          Ferramentas, Metodologias & DevOps
+        </h3>
         <ul>
           <li>
-            <strong>Versionamento:</strong> Git, GitHub, Git Flow (Proficiente)
+            <strong
+              class="traduzivel"
+              data-pt="Versionamento:"
+              data-en="Version Control:"
+              >Versionamento:</strong
+            >
+            <span
+              class="traduzivel"
+              data-pt="Git, GitHub, Git Flow (Proficiente)"
+              data-en="Git, GitHub, Git Flow (Proficient)"
+              >Git, GitHub, Git Flow (Proficiente)</span
+            >
           </li>
-          <li><strong>Qualidade & Princípios:</strong> Clean Code, SOLID</li>
           <li>
-            <strong>Testes:</strong> Testes Unitários (JUnit, Mockito, Jest),
-            Testes Instrumentados (Espresso)
+            <strong
+              class="traduzivel"
+              data-pt="Qualidade & Princípios:"
+              data-en="Quality & Principles:"
+              >Qualidade & Princípios:</strong
+            >
+            Clean Code, SOLID
           </li>
           <li>
-            <strong>Gestão de Projetos:</strong> Metodologias Ágeis, SCRUM, Jira
+            <strong class="traduzivel" data-pt="Testes:" data-en="Testing:"
+              >Testes:</strong
+            >
+            <span
+              class="traduzivel"
+              data-pt="Testes Unitários (JUnit, Mockito, Jest), Testes Instrumentados (Espresso)"
+              data-en="Unit Tests (JUnit, Mockito, Jest), Instrumented Tests (Espresso)"
+              >Testes Unitários (JUnit, Mockito, Jest), Testes Instrumentados
+              (Espresso)</span
+            >
           </li>
-          <li><strong>Design:</strong> Figma (Básico/Intermediário)</li>
           <li>
-            <strong>Plataformas:</strong> Docker, Firebase, Postman, Android
-            Studio, VS Code
+            <strong
+              class="traduzivel"
+              data-pt="Gestão de Projetos:"
+              data-en="Project Management:"
+              >Gestão de Projetos:</strong
+            >
+            <span
+              class="traduzivel"
+              data-pt="Metodologias Ágeis, SCRUM, Jira"
+              data-en="Agile Methodologies, SCRUM, Jira"
+              >Metodologias Ágeis, SCRUM, Jira</span
+            >
+          </li>
+          <li>
+            <strong>Design:</strong>
+            <span
+              class="traduzivel"
+              data-pt="Figma (Básico/Intermediário)"
+              data-en="Figma (Basic/Intermediate)"
+              >Figma (Básico/Intermediário)</span
+            >
+          </li>
+          <li>
+            <strong
+              class="traduzivel"
+              data-pt="Plataformas:"
+              data-en="Platforms:"
+              >Plataformas:</strong
+            >
+            Docker, Firebase, Postman, Android Studio, VS Code
           </li>
         </ul>
       </section>
 
       <section id="soft-skills">
-        <h2>Competências Comportamentais (Soft Skills)</h2>
+        <h2
+          class="traduzivel"
+          data-pt="Competências Comportamentais (Soft Skills)"
+          data-en="Behavioral Skills (Soft Skills)"
+        >
+          Competências Comportamentais (Soft Skills)
+        </h2>
         <ul>
-          <li>Resolução de problemas</li>
-          <li>Trabalho em equipe</li>
-          <li>Comunicação eficaz</li>
-          <li>Proatividade e aprendizado contínuo</li>
-          <li>Adaptabilidade e Flexibilidade</li>
-          <li>Pensamento Crítico</li>
-          <li>Organização e Gerenciamento de Tempo</li>
-          <li>Atenção aos Detalhes</li>
-          <li>Foco e Disciplina</li>
+          <li
+            class="traduzivel"
+            data-pt="Resolução de problemas"
+            data-en="Problem Solving"
+          >
+            Resolução de problemas
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Trabalho em equipe"
+            data-en="Teamwork"
+          >
+            Trabalho em equipe
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Comunicação eficaz"
+            data-en="Effective Communication"
+          >
+            Comunicação eficaz
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Proatividade e aprendizado contínuo"
+            data-en="Proactivity and Continuous Learning"
+          >
+            Proatividade e aprendizado contínuo
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Adaptabilidade e Flexibilidade"
+            data-en="Adaptability and Flexibility"
+          >
+            Adaptabilidade e Flexibilidade
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Pensamento Crítico"
+            data-en="Critical Thinking"
+          >
+            Pensamento Crítico
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Organização e Gerenciamento de Tempo"
+            data-en="Organization and Time Management"
+          >
+            Organização e Gerenciamento de Tempo
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Atenção aos Detalhes"
+            data-en="Attention to Detail"
+          >
+            Atenção aos Detalhes
+          </li>
+          <li
+            class="traduzivel"
+            data-pt="Foco e Disciplina"
+            data-en="Focus and Discipline"
+          >
+            Foco e Disciplina
+          </li>
         </ul>
       </section>
 
       <section id="formacao">
-        <h2>Formação Acadêmica</h2>
+        <h2 class="traduzivel" data-pt="Formação Acadêmica" data-en="Education">
+          Formação Acadêmica
+        </h2>
         <ul>
           <li>
             <strong>Jetpack Compose do Zero ao Avançado</strong> – Stack Mobile
-            (Hotmart) (30h, 2025 - Em andamento)
+            (Hotmart)
+            <span
+              class="traduzivel"
+              data-pt="(30h, 2025 - Em andamento)"
+              data-en="(30h, 2025 - In Progress)"
+              >(30h, 2025 - Em andamento)</span
+            >
             <br />
-            <small style="color: var(--secondary-color)">
+            <small
+              style="color: var(--secondary-color)"
+              class="traduzivel"
+              data-pt="Tópicos: UI com Compose, State Management, DataStore, Coroutines/Flow, Hilt, Room, Ktor, Pagamentos (Mercado Pago), Publicação na Play Store."
+              data-en="Topics: UI with Compose, State Management, DataStore, Coroutines/Flow, Hilt, Room, Ktor, Payments (Mercado Pago), Play Store Publishing."
+            >
               Tópicos: UI com Compose, State Management, DataStore,
               Coroutines/Flow, Hilt, Room, Ktor, Pagamentos (Mercado Pago),
               Publicação na Play Store.
             </small>
           </li>
           <li>
-            <strong>Formação Desenvolvedor Web Full Stack</strong> – Codans
-            Cursos Ltda. (200h, 2025 - Em andamento)
+            <strong
+              class="traduzivel"
+              data-pt="Formação Desenvolvedor Web Full Stack"
+              data-en="Full Stack Web Developer Training"
+              >Formação Desenvolvedor Web Full Stack</strong
+            >
+            – Codans Cursos Ltda.
+            <span
+              class="traduzivel"
+              data-pt="(200h, 2025 - Em andamento)"
+              data-en="(200h, 2025 - In Progress)"
+              >(200h, 2025 - Em andamento)</span
+            >
             <br />
-            <small style="color: var(--secondary-color)">
+            <small
+              style="color: var(--secondary-color)"
+              class="traduzivel"
+              data-pt="Tópicos: Back-end (Node.js, TypeScript, Nest.js), Front-end (React, Next.js), Bancos de Dados (MySQL, MongoDB), DevOps (Docker) e Testes (Jest)."
+              data-en="Topics: Back-end (Node.js, TypeScript, Nest.js), Front-end (React, Next.js), Databases (MySQL, MongoDB), DevOps (Docker), and Testing (Jest)."
+            >
               Tópicos: Back-end (Node.js, TypeScript, Nest.js), Front-end
               (React, Next.js), Bancos de Dados (MySQL, MongoDB), DevOps
               (Docker) e Testes (Jest).
             </small>
           </li>
           <li>
-            <strong>Graduação em Análise e Desenvolvimento de Sistemas</strong>
+            <strong
+              class="traduzivel"
+              data-pt="Graduação em Análise e Desenvolvimento de Sistemas"
+              data-en="Bachelor's in Systems Analysis and Development"
+              >Graduação em Análise e Desenvolvimento de Sistemas</strong
+            >
             – Uni-Fanap (2023 – 2025)
             <a
               href="#"
@@ -530,8 +940,13 @@
             </a>
           </li>
           <li>
-            <strong>Mentoria Completa Desenvolvedor Android</strong> – Codans
-            Cursos Ltda. (220h, 2024 – 2025)
+            <strong
+              class="traduzivel"
+              data-pt="Mentoria Completa Desenvolvedor Android"
+              data-en="Complete Android Developer Mentorship"
+              >Mentoria Completa Desenvolvedor Android</strong
+            >
+            – Codans Cursos Ltda. (220h, 2024 – 2025)
             <a
               href="#"
               id="mentoria-trigger"
@@ -564,8 +979,13 @@
             </a>
           </li>
           <li>
-            <strong>Java Para Iniciantes e Estudantes</strong> – Udemy (14h,
-            2023)
+            <strong
+              class="traduzivel"
+              data-pt="Java Para Iniciantes e Estudantes"
+              data-en="Java for Beginners and Students"
+              >Java Para Iniciantes e Estudantes</strong
+            >
+            – Udemy (14h, 2023)
             <a
               href="#"
               id="java-trigger"
